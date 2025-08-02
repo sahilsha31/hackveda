@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'Public')));
 
 // MongoDB Connection (without deprecated options)
-mongoose.connect('mongodb+srv://31sharmasahil31082002:sahil4321@cluster0.c1yxw7z.mongodb.net/hackveda1')
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
@@ -47,3 +47,4 @@ app.get('/', (req, res) => {
 app.listen(8000, () => {
   console.log("Server has started on http://localhost:8000");
 });
+
