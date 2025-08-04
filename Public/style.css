@@ -1492,3 +1492,440 @@ button:hover {
   }
 }
 
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+
+  .signup,
+  .call-us {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .logo-section h1 {
+    font-size: 18px;
+  }
+
+  .logo-section p {
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .left {
+    max-width: 100%;
+  }
+
+  .left h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .left p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  /* Group stats + trained properly in one row */
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    flex: 1;
+    white-space: nowrap;
+  }
+
+  .stat1 {
+    border: none;
+    padding: 0;
+  }
+
+  .trained {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+  }
+
+  .trained div img {
+    width: 26px;
+    height: 26px;
+  }
+
+  /* CTA buttons stacked */
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .btn {
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .note {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  /* Right image fix */
+  .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .right img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .trusted-section {
+    padding: 20px 15px 20px;
+  }
+
+  .trusted-section h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .logos {
+    gap: 20px;
+  }
+
+  .logos img {
+    width: 100%;
+    width: 450px; /* control max size per logo */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .trusted-section h3 {
+    font-size: 14px;
+  }
+
+  .logos img {
+    width: 300px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .stats-box {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    gap: 20px;
+    padding: 25px 20px;
+  }
+
+  .stat-title {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .stat-title h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 20px 15px;
+    height: auto;
+  }
+
+  .stat-title {
+    margin-bottom: 20px;
+  }
+
+  .stat-title h2 {
+    font-size: 22px;
+  }
+
+  .stat2 h3 {
+    font-size: 20px;
+  }
+
+  .stat2 p {
+    font-size: 13px;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .experience-left img {
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .experience-right {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .experience-right h2 {
+    font-size: 28px;
+  }
+
+  .experience-right p {
+    font-size: 15px;
+  }
+
+  .features li {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-section {
+    padding: 40px 15px;
+  }
+
+  .experience-left img {
+    max-width: 100%;
+  }
+
+  .experience-right h2 {
+    font-size: 24px;
+  }
+
+  .experience-right p {
+    font-size: 14px;
+  }
+
+  .features li {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .features li img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-section {
+    height: auto;
+  }
+
+  .internship-section::before {
+    height: 100%; /* Let it stretch naturally */
+  }
+
+  .intern-sec {
+    padding: 20px 20px;
+  }
+
+  .intern1 {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px 20px;
+  }
+
+  .text-content {
+    max-width: 100%;
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  .text-content h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .text-content .subtext {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .highlight-text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .terms {
+    font-size: 11px;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-content {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .image-content img {
+    max-width: 90%;
+    max-height: 250px;
+    position: static;
+  }
+
+  .intern2 {
+    padding: 10px 15px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-logo img {
+    width: 80px;
+  }
+
+  .footer-logo h2 {
+    font-size: 24px;
+  }
+
+  .footer-logo .iso {
+    font-size: 12px;
+  }
+
+  .footer-desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .footer-right {
+    padding-top: 20px;
+    padding-left: 0;
+    gap: 15px;
+  }
+
+  .footer-item,
+  .footer-item2 {
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  .footer-item img,
+  .footer-item2 img {
+    height: 18px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
